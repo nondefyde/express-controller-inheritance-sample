@@ -1,4 +1,4 @@
-# MAJOBS WEB SERVICE
+# Express controller class inheritance using ES6
 
 ## Description
 A sample project to show controller class inheritance using javascript es6
