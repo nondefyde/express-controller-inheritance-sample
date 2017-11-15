@@ -1,0 +1,40 @@
+{
+  "name": "express-controller-inheritance-sample",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/app.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/app",
+    "dev": "nodemon src/app --exec \"npm run lint && node -r babel-register\"",
+    "clean": "rimraf dist",
+    "build": "npm run clean && mkdir dist && babel src -s -d dist",
+    "test": "echo 'No tests'",
+    "lint": "esw src"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "~1.17.1",
+    "config": "^1.27.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "mongoose": "^4.13.2",
+    "morgan": "~1.8.1",
+    "q": "^1.5.1",
+    "rimraf": "^2.6.2",
+    "underscore": "^1.8.3",
+    "validatorjs": "^3.13.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.10.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-watch": "^3.1.3"
+  }
+}

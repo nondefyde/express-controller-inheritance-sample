@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "import",
+    "mocha"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "brace-style": "off",
+    "max-len": "off",
+    "mocha/no-exclusive-tests": "error",
+    "no-console": 0,
+    "no-unused-vars":"off",
+    "no-tabs": "off",
+    "new-cap": "off",
+    "no-use-before-define": "off",
+    "linebreak-style": "off",
+    "no-invalid-this": "off",
+    "indent": [
+      2,
+      "tab"
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": false
+        }
+      }
+    ]
+  }
+}
